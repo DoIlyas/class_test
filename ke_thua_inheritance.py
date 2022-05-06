@@ -2,11 +2,11 @@
 class Xe:
     name = 'Đây là tên xe'
 
-class Xe_Dap(Xe):
+class XeDap(Xe):
     def show_name(self):
         print(self.name)
 
-x = Xe_Dap()
+x = XeDap()
 x.show_name()
 
 
@@ -15,7 +15,7 @@ class Xe:
     def set_name(self, name):
         self.name = name
 
-class Xe_dap(Xe):
+class Xedap(Xe):
     def show_name(self):
         # sử dụng phương thức của lớp cha
         self.set_name("Xe đạp")
@@ -23,5 +23,5 @@ class Xe_dap(Xe):
         # sử dụng thuộc tính của lớp cha
         print(self.name)
 
-x = Xe_dap()
+x = Xedap()
 x.show_name()
